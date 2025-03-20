@@ -10,7 +10,8 @@ def calcular_compatibilidad_cuidador(cuidador, mascota):
         int: Puntuación de compatibilidad.
     """
     compatibilidad_cuidador = 0
-    # Comprobar tipo de animal
+
+    # Comprobar tipo de mascota
     if cuidador['acepta_Perro'] == 1 and mascota['tipo_animal_Perro'] == 1:
         compatibilidad_cuidador += 1
     if cuidador['acepta_Gato'] == 1 and mascota['tipo_animal_Gato'] == 1:
